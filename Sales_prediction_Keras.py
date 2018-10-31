@@ -21,7 +21,7 @@ test_data_df =pd.read_csv("sales_data_test.csv")
 
 # Data needs to be scaled to a small range like 0 to 1 for the neural
 # network to work well.
-scaler =MinMaxScaler(feature_range=(0,1))
+scaler =MinMaxScaler(feature_range=(0,1))  
 
 # Scale both the training inputs and outputs
 scaled_training =scaler.fit_transform(training_data_df)
